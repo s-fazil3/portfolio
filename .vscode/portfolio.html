@@ -4,233 +4,251 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Pacifico&family=Oswald:wght@500&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Poppins', Arial, sans-serif;
+            font-family: 'Oswald', sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
-            background-image: url("squid.jpg"),url("https://wallpapercat.com/w/full/c/c/f/46502-1920x1080-desktop-1080p-squid-game-background-image.jpg");
-            background-position: center top, center bottom; 
-            background-repeat: no-repeat, no-repeat;
-            background-size: cover, cover; 
-            background-attachment: fixed, fixed;
+            color: #f9f9f9;
+            background: url('https://wallpaperaccess.com/full/6289338.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-image: url("https://i.redd.it/aewgzghlaiq71.png");
+            background-repeat: no-repeat;
         }
+
         header {
-            background: #1e2022;
+            background: rgba(0, 0, 0, 0.8);
             color: #fff;
             padding: 20px 0;
             text-align: center;
+            font-size: 1.2em;
         }
+
         header nav ul {
             list-style: none;
             padding: 0;
             margin: 0;
         }
+
         header nav ul li {
             display: inline;
             margin: 0 15px;
         }
+
         header nav ul li a {
-            color: #ff7f50;
+            color: #ff0000;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.2em;
+            transition: color 0.3s, transform 0.3s;
         }
+
         header nav ul li a:hover {
-            text-decoration: underline;
+            color: #fff;
+            transform: scale(1.1);
         }
+
         #hero {
-            background: linear-gradient(135deg, #a40000, #a40000);
-            padding: 60px 60px;
             text-align: center;
             color: #fff;
-            margin: 10px;
-            margin-left: 1010px;
-            border: 1px #1e2022;
-            border-radius: 2px;
-                    }
-        #hero h1 {
-            font-size: xx-large;
-            margin: 10px;
+            padding: 50px 20px;
+            padding-right: 100px;
+            font-size: x-large;
         }
-        #hero p {
-            font-size: xx-large;
-            margin-top: 10px;
-            padding-right: 10px;
-        }
-        #hero img{
-            align-items: end;
+
+        #hero img {
             height: 300px;
             width: 300px;
-            border-radius: 50%;
             object-fit: cover;
-            padding: auto;
-            
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border: 5px solid #e91e63;
+            transition: transform 0.3s;
         }
+
+        #hero img:hover {
+            transform: scale(1.1);
+        }
+
+        #hero h1 {
+            font-size: 4em;
+            margin: 10px 0;
+            font-family: 'Pacifico', cursive;
+            color: #e91e63;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        #hero p {
+            font-size: 1.5em;
+            font-weight: 300;
+            font-size: xx-large;
+        }
+
         section {
-            margin: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
             padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            color: #f9f9f9;
+            font-size: 1.2em;
+            line-height: 1.8;
         }
+
         section h2 {
-            color: #a40000;
-            font-size: 2em;
+            color: #e91e63;
+            font-size: 2.5em;
             margin-bottom: 10px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
         }
+
         section ul, section ol {
-            margin: 0;
             padding-left: 20px;
         }
+
         section ul li, section ol li {
-            font-size: 1.2em;
             margin-bottom: 8px;
+            border-left: 4px solid #554b13;
+            padding: 10px;
+            background: rgba(122, 95, 18, 0.504);
+            border-radius: 5px;
         }
-        .im {
-            width: 130px;
-            height: auto;
-            display: flex;
-            margin: 20px auto;
-            padding-left: 30px;
-            border-color: 2px black;
-        }
-        .ab1 {
-            background-color: #1e2022;
-            color: #f1eaea;
-            border: 6px solid #a40000;
-            margin-right: 50%;
-            position: static;
-            margin-right: 1010px;
-            padding-top: 10px;
-            font-style: oblique;
-            font-size: x-large;
-            
-        }
-        .s1 {
-            background-color: #1e2022;
-            color: #fff;
-            border: 6px solid #a40000;
-            position: relative;
 
-               }
-        footer {
+        .footer-links {
             text-align: center;
-            padding: 15px 0;
-            background: #1e2022;
-            color: white;
-        }
-        footer a {
-            color: #ff7f50;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        .m1{
-            top: 50%;
-        }
-        .sq{
-            width:10px;
-        }
-        .pro {
-            background-color: #1e2022;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.8);
             color: #fff;
-            border: 6px solid #a40000;
-            position: relative;
-            font-size: large;
+        }
 
+        footer a {
+            color: #ff9800;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2em;
         }
-        .ac{
-            background-color: #1e2022;
+
+        footer a:hover {
             color: #fff;
-            border: 6px solid #a40000;
-            position: relative;
-            font-size:large;
         }
-        .re1{
-            background-color: #1e2022;
-            color: #fff;
-            border: 6px solid #a40000;
-            position: relative;
-            font-size: x-large;
-        }
-        .s1 ul li{
-            background-color: #a40000;
-            border: 4px solid rgb(226, 69, 69);
-            border-radius: 8px;
-            width: fit-content;
-            font-size: x-large;
+
+        @media (max-width: 768px) {
+            #hero h1 {
+                font-size: 2.5em;
+            }
+            #hero p {
+                font-size: 1.2em;
+            }
+            section {
+                width: 95%;
+            }
         }
     </style>
 </head>
 <body>
-    
+
     <header>
         <nav>
             <ul>
                 <li><a href="#About">About Me</a></li>
-                <li><a href="#skill">Skills</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#Achievements">Achievements</a></li>
-                <li><a href="#references">References</a></li>
+                <li><a href="#references">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <div id="hero">
-            <img src="https://disguise.com/media/catalog/product/cache/0a040de21cca02a39c3e260bc2eeaed3/1/4/144409.jpg" alt="Profile Image" class="im">
+        <img src="https://disguise.com/media/catalog/product/cache/0a040de21cca02a39c3e260bc2eeaed3/1/4/144409.jpg" alt="Profile Image">
         <h1>Welcome to My Portfolio</h1>
         <p>I'm Fazil, a MERN Stack Developer</p>
     </div>
-</div>
-   <div class="m1">
-    <section id="About" class="ab1">
+
+    <section id="About" style="padding-right: 650px;">
         <h2>About Me</h2>
-        <p>
+        <p style="font-size: x-large;">
             Welcome to my portfolio! I am Fazil S, a passionate and driven professional with a background in Electronics and Communication Engineering, complemented by a strong foundation in software development. My expertise lies in creating dynamic and responsive web applications using the MERN stack (MongoDB, Express.js, React.js, and Node.js).<br><br>
             With a keen eye for detail and a commitment to problem-solving, I strive to deliver efficient and user-friendly solutions. Explore my portfolio to learn more about my skills, projects, and achievements. Let's build the future together!
         </p>
     </section>
-    </div>
-    <section id="skill" class="s1">
+
+    <section id="skills" style="padding-right: 650px;">
         <h2>Skills</h2>
-        <ul>
+        <ul style="font-size: x-large;">
             <li>C</li>
             <li>Java</li>
             <li>Python</li>
-            <li>C++</li>
             <li>HTML</li>
             <li>CSS</li>
+            <li>SQL</li>
             <li>JavaScript</li>
         </ul>
     </section>
-    <section id="projects" class="pro">
+
+    <section id="projects" style="padding-right: 650px;">
         <h2>Projects</h2>
         <ol>
-            <li>Airplane Management System</li>
-            <li>E-voting Machine</li>
-            <li>Hangman Game</li>
-            <li>Online Bookstore Application</li>
+            <li style="font-size: xx-large;">
+                Airplane Management System
+                <p style="font-size: x-large;">The notion of airline booking is based on making and canceling flight bookings. The system does not have a login function. Users may simply book flights, cancel reservations, and look up information. It has a variety of payment options for bookings. This tiny project has fewer features, but they are the most important ones.</p>
+            </li>
+            <li style="font-size: xx-large;">
+                E-voting Machine
+                <p style="font-size: x-large;">The goal of the undertaking is to use the C programming language to create a prototype for an online voting system. We want to build a safe, straightforward-to-use platform that lets people cast ballots from the comfort of their own devices remotely by utilizing technology.</p>
+            </li>
+            <li style="font-size: xx-large;">
+                hangman game
+                <p style="font-size: x-large;">Hangman Game using Python and MongoDB involves designing an interactive word-guessing game where players attempt to guess a secret word within a limited number of attempts. MongoDB can be used to store the game's word bank, player progress, or high scores.</p>
+            </li>
+            <li style="font-size: xx-large;">
+                Online Bookstore Application
+                <p style="font-size: x-large;">Online Bookstore App using Java and SQL involves developing a user-friendly application where customers can browse books, add them to their cart, and purchase them. SQL databases will be used to manage books, users, orders, and transactions</p>
+            </li>
         </ol>
     </section>
-    <section id="Achievements" class="ac">
+
+    <section id="Achievements" style="padding-right: 650px;">
         <h2>Achievements</h2>
-        <ul>
+        <ul style="font-size: x-large;">
             <li>LeetCode - Solved 100 problems</li>
             <li>SkillRack - Solved 500+ problems</li>
             <li>CodeChef - Solved 200+ problems</li>
+            <li>HackerRank - Achieved gold badge in Java</li>
         </ul>
     </section>
-    <section id="references" class="re1">
-        <h2>References</h2>
+
+    <section id="references" style="padding-right: 650px;">
+        <h2>Contact Me</h2>
         <p>
-            <a href="https://www.linkedin.com/in/fazil-s-ba20642b1/"><img  style="height: 50px; width: 50px; margin-right: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1024px-LinkedIn_icon.svg.png" alt=""></a>
-            <a href="https://github.com/s-fazil3"><img  style="height: 50px; width: 50px; margin-right: 20px;" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
-            <a href="https://leetcode.com/u/user3661A/"><img  style="height: 50px; width: 50px; margin-right: 20px;" src="https://user-images.githubusercontent.com/36547915/97088991-45da5d00-1652-11eb-900f-80d106540f4f.png" alt=""></a>
-            <a href="https://www.skillrack.com/faces/resume.xhtml?id=484380&key=d2824e5d4547b60f3c22facfbb579875344f705d"><img  style="height: 50px; width: 50px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfaz1B6q5yMx-YJR4UF-9_jmGWgrn0yoF29Q&s" alt=""></a>
+            <a href="https://www.linkedin.com/in/fazil-s-ba20642b1/">
+                <img style="height: 50px; width: 50px; margin-right: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1024px-LinkedIn_icon.svg.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/s-fazil3">
+                <img style="height: 50px; width: 50px; margin-right: 20px;" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+            </a>
+            <a href="https://leetcode.com/u/user3661A/">
+                <img style="height: 50px; width: 50px; margin-right: 20px;" src="https://user-images.githubusercontent.com/36547915/97088991-45da5d00-1652-11eb-900f-80d106540f4f.png" alt="GitHub">
+            </a>
+            <a href="https://www.skillrack.com/faces/resume.xhtml?id=484380&key=d2824e5d4547b60f3c22facfbb579875344f705d">
+                <img style="height: 50px; width: 50px; margin-right: 20px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfaz1B6q5yMx-YJR4UF-9_jmGWgrn0yoF29Q&s" alt="GitHub">
+            </a>
         </p>
-       
     </section>
+
+    <footer>
+        <div class="footer-links">
+            &copy; 2025 Fazil S |
+            <a href="#About">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#Achievements">Achievements</a>
+            <a href="#references">Contact</a>
+        </div>
+    </footer>
+
 </body>
 </html>
