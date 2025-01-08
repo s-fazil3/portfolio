@@ -15,6 +15,7 @@
             background-repeat: no-repeat, no-repeat;
             background-size: cover, cover; 
             background-attachment: fixed, fixed;
+
         }
         header {
             background: #1e2022;
@@ -32,7 +33,7 @@
             margin: 0 15px;
         }
         header nav ul li a {
-            color: #ff7f50;
+            color: #a40000;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.2em;
@@ -45,28 +46,36 @@
             padding: 60px 60px;
             text-align: center;
             color: #fff;
-            margin: 10px;
-            margin-left: 1010px;
-            border: 1px #1e2022;
-            border-radius: 2px;
-                    }
+            margin-left: 1000px;
+            border-radius: 10px solid rgb(249, 249, 249);
+            filter:opacity(20px);
+            margin: 0;
+            padding: 0%;
+            }
         #hero h1 {
             font-size: xx-large;
             margin: 10px;
+            margin-left: 700px; 
+            padding-bottom: 20px;
+        
         }
         #hero p {
             font-size: xx-large;
             margin-top: 10px;
             padding-right: 10px;
+            padding-bottom: 20px;
+            margin-left: 700px;
         }
         #hero img{
-            align-items: end;
             height: 300px;
             width: 300px;
-            border-radius: 50%;
             object-fit: cover;
-            padding: auto;
-            
+            position: relative;
+            align-content: center;
+            margin-left: 600px;
+            border-radius: 5px;
+            margin-right: 700px;
+            margin-bottom: 50px;
         }
         section {
             margin: 20px;
@@ -101,18 +110,25 @@
             color: #f1eaea;
             border: 6px solid #a40000;
             margin-right: 50%;
-            position: static;
+            position: relative;
             margin-right: 1010px;
             padding-top: 10px;
             font-style: oblique;
             font-size: x-large;
-            
+            height: 450px;
+            margin-top: 50px;
+            margin-left: 0;
+            margin-right: 0;
+            padding-bottom: 10px;
         }
         .s1 {
             background-color: #1e2022;
             color: #fff;
             border: 6px solid #a40000;
             position: relative;
+            font-style: oblique;
+            font-size: larger;
+            margin-top: 50px;
 
                }
         footer {
@@ -135,19 +151,23 @@
             width:10px;
         }
         .pro {
+            font-style: oblique;
             background-color: #1e2022;
             color: #fff;
             border: 6px solid #a40000;
             position: relative;
-            font-size: large;
+            font-size:larger;
+            margin-top: 50px;
 
         }
         .ac{
+            font-style: oblique;
             background-color: #1e2022;
             color: #fff;
             border: 6px solid #a40000;
             position: relative;
-            font-size:large;
+            font-size:larger;
+            margin-top: 50px;
         }
         .re1{
             background-color: #1e2022;
@@ -161,7 +181,7 @@
             border: 4px solid rgb(226, 69, 69);
             border-radius: 8px;
             width: fit-content;
-            font-size: x-large;
+            font-size: larger;
         }
     </style>
 </head>
@@ -174,16 +194,18 @@
                 <li><a href="#skill">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#Achievements">Achievements</a></li>
-                <li><a href="#references">References</a></li>
+                <li><a href="#references">Contact us</a></li>
             </ul>
         </nav>
     </header>
-    <div id="hero">
-            <img src="https://disguise.com/media/catalog/product/cache/0a040de21cca02a39c3e260bc2eeaed3/1/4/144409.jpg" alt="Profile Image" class="im">
-        <h1>Welcome to My Portfolio</h1>
+       <div class="con">
+           <div id="hero">
+            <img style="height: 300px; width: 300px; padding-right: 1000px; margin-top: 50px; padding-top: 50px; margin-right: 150px; padding-right: 250px;"  src="https://disguise.com/media/catalog/product/cache/0a040de21cca02a39c3e260bc2eeaed3/1/4/144409.jpg" alt="Profile Image" class="im">
+             <h1>Welcome to My Portfolio</h1>
         <p>I'm Fazil, a MERN Stack Developer</p>
     </div>
 </div>
+
    <div class="m1">
     <section id="About" class="ab1">
         <h2>About Me</h2>
@@ -199,19 +221,19 @@
             <li>C</li>
             <li>Java</li>
             <li>Python</li>
-            <li>C++</li>
             <li>HTML</li>
             <li>CSS</li>
+            <li>SQL</li>
             <li>JavaScript</li>
         </ul>
     </section>
     <section id="projects" class="pro">
         <h2>Projects</h2>
         <ol>
-            <li>Airplane Management System</li>
-            <li>E-voting Machine</li>
-            <li>Hangman Game</li>
-            <li>Online Bookstore Application</li>
+            <li>Airplane Management System<p>->The notion of airline booking is based on making and canceling flight bookings. The system does not have a login function. Users may simply book flights, cancel reservations, and look up information. It has a variety of payment alternatives for bookings. This tiny project has fewer features, but they are the most important ones.</p></li>
+            <li>E-voting Machine <p>-> The goal of the undertaking is to use the C programming language to create a prototype for an online voting system. We want to build a safe, straightforward-to-use platform that lets people cast ballots from the comfort of their own devices remotely by utilizing technology.</p></li>
+            <li>Hangman Game <p>-> Hangman Game using Python and MongoDB involves designing an interactive word-guessing game where players attempt to guess a secret word within a limited number of attempts. MongoDB can be used to store the game's word bank, player progress, or high scores.</p></li>
+            <li>Online Bookstore Application <p>->Online Bookstore App using Java and SQL involves developing a user-friendly application where customers can browse books, add them to their cart, and purchase them. SQL databases will be used to manage books, users, orders, and transactions</p></li>
         </ol>
     </section>
     <section id="Achievements" class="ac">
@@ -220,10 +242,12 @@
             <li>LeetCode - Solved 100 problems</li>
             <li>SkillRack - Solved 500+ problems</li>
             <li>CodeChef - Solved 200+ problems</li>
+            <li>hackerrank - achieved gold badge in java
+            </li>
         </ul>
     </section>
     <section id="references" class="re1">
-        <h2>References</h2>
+        <h2>Contact us</h2>
         <p>
             <a href="https://www.linkedin.com/in/fazil-s-ba20642b1/"><img  style="height: 50px; width: 50px; margin-right: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1024px-LinkedIn_icon.svg.png" alt=""></a>
             <a href="https://github.com/s-fazil3"><img  style="height: 50px; width: 50px; margin-right: 20px;" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
