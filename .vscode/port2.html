@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-image: url("squid.jpg"),url("https://wallpapercat.com/w/full/c/c/f/46502-1920x1080-desktop-1080p-squid-game-background-image.jpg");
+            background-position: center top, center bottom; 
+            background-repeat: no-repeat, no-repeat;
+            background-size: cover, cover; 
+            background-attachment: fixed, fixed;
+        }
+        header {
+            background: #1e2022;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        header nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        header nav ul li a {
+            color: #ff7f50;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+        }
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+        #hero {
+            background: linear-gradient(135deg, #a40000, #a40000);
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        #hero h1 {
+            font-size: 1.8em;
+            margin: 10px 0;
+        }
+        #hero p {
+            font-size: 1.2em;
+        }
+        #hero img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        section {
+            margin: 10px;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            color: #a40000;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        section ul, section ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+        section ul li, section ol li {
+            font-size: 1em;
+            margin-bottom: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #1e2022;
+            color: white;
+        }
+        footer a {
+            color: #ff7f50;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header nav ul li {
+                display: block;
+                margin: 5px 0;
+            }
+            #hero {
+                padding: 15px;
+                margin: 5px;
+            }
+            #hero h1 {
+                font-size: 1.5em;
+            }
+            #hero p {
+                font-size: 1em;
+            }
+            section {
+                margin: 5px;
+                padding: 10px;
+            }
+            section h2 {
+                font-size: 1.2em;
+            }
+            section ul li, section ol li {
+                font-size: 0.9em;
+            }
+            #hero img {
+                height: 120px;
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#About">About Me</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#Achievements">Achievements</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="hero">
+        <img src="https://disguise.com/media/catalog/product/cache/0a040de21cca02a39c3e260bc2eeaed3/1/4/144409.jpg" alt="Profile Image">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm Fazil, a MERN Stack Developer</p>
+    </div>
+    <section id="About">
+        <h2>About Me</h2>
+        <p>
+            Welcome to my portfolio! I am Fazil S, a passionate and driven professional with a background in Electronics and Communication Engineering, complemented by a strong foundation in software development. My expertise lies in creating dynamic and responsive web applications using the MERN stack.
+        </p>
+    </section>
+    <section id="skill">
+        <h2>Skills</h2>
+        <ul>
+            <li>C</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ol>
+            <li>Airplane Management System</li>
+            <li>E-voting Machine</li>
+            <li>Hangman Game</li>
+            <li>Online Bookstore Application</li>
+        </ol>
+    </section>
+    <section id="Achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>LeetCode - Solved 100 problems</li>
+            <li>SkillRack - Solved 500+ problems</li>
+            <li>CodeChef - Solved 200+ problems</li>
+        </ul>
+    </section>
+    <section id="references">
+        <h2>References</h2>
+        <p>
+            <a href="https://www.linkedin.com/in/fazil-s-ba20642b1/"><img style="height: 40px; width: 40px; margin-right: 10px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1024px-LinkedIn_icon.svg.png" alt=""></a>
+            <a href="https://github.com/s-fazil3"><img style="height: 40px; width: 40px; margin-right: 10px;" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
+            <a href="https://leetcode.com/u/user3661A/"><img style="height: 40px; width: 40px; margin-right: 10px;" src="https://user-images.githubusercontent.com/36547915/97088991-45da5d00-1652-11eb-900f-80d106540f4f.png" alt=""></a>
+            <a href="https://www.skillrack.com/faces/resume.xhtml?id=484380&key=d2824e5d4547b60f3c22facfbb579875344f705d"><img style="height: 40px; width: 40px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfaz1B6q5yMx-YJR4UF-9_jmGWgrn0yoF29Q&s" alt=""></a>
+        </p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Fazil. All rights reserved.</p>
+    </footer>
+</body>
+</html>
